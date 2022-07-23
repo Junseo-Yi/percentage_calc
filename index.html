@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -7,9 +6,16 @@
   </head>
   <body>
     <div width = "100%", height = "100%">
-      <input type="number" name="평균" >
-      <input type="number" name="표준편차">
-      <input type="number" name="학생 수">
+      <!--input 모음-->
+      <label for="원점수">원점수: </label><input type="number" name="원점수" id = "o"><br>
+      <label for="평균">평균: </label><input type="number" name="평균" id = "m"><br>
+      <label for="표준편차">표준편차: </label><input type="number" name="표준편차" id = "s"><br>
+      <label for="학생 수">학생 수:</label><input type="number" name="학생 수" id = "p"><br>
+      <!-- 결과모음-->
+      <label for="percentage">백분위: </label><div id = "percentage"></div><br>
+      <label for="rank">등수: </label><div id = "rank"></div><br>
+      <button type="button" name="Submit" onclick="calc()">계산</button>
+      <script src = './script.js'></script>
     </div>
   </body>
 </html>
